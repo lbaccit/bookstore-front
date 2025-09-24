@@ -30,6 +30,8 @@ export default function AuthorForm({
             description: "",
             birthDate: "",
             image: "",
+            books: "",
+            prizes: "",
             ...defaultValues,
         },  
     });
@@ -100,7 +102,36 @@ export default function AuthorForm({
                     </p>
                 )}
             </div>
-
+            <div>
+                <label htmlFor="books" className="block font-medium">
+                    Libro del Autor
+                </label>
+                <input
+                    id="books"
+                    {...register("books")}
+                    className="w-full p-2 border rounded"
+                    />
+                {errors.books && (
+                    <p className="text-red-500 text-sm mt-1">
+                        {errors.books.message}
+                    </p> 
+                    )}
+            </div>
+            <div>
+                <label htmlFor="prizes" className="block font-medium">
+                    Premio del Autor
+                </label>
+                <input
+                    id="prizes"
+                    {...register("prizes")}
+                    className="w-full p-2 border rounded"
+                    />
+                {errors.prizes && (
+                    <p className="text-red-500 text-sm mt-1">
+                        {errors.prizes.message}
+                    </p> 
+                    )}
+            </div>
             <button
                 type="submit"
                 disabled={isSubmitting}

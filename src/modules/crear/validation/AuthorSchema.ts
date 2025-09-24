@@ -17,6 +17,12 @@ export const AuthorSchema = z.object({
     .url({message: 'La imagen debe ser una URL válida'})
     .optional()
     .or(z.literal('')),
+    books: z
+    .string()
+    .min(5, {message: 'El nombre del libr debe tener al menos 5 caracteres'}),
+    prizes: z
+    .string()
+    .min(5, {message: 'El nombre del premio debe tener al menos 5 caracteres'}),
 });
 
 export type AuthorFormData = z.infer<typeof AuthorSchema>;
