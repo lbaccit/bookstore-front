@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from '@/shared/ui/Header';
-import Footer from '@/shared/ui/Footer';
+
 
 export default function AuthorsLayout({
     children,

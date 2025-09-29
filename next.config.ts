@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "trabalibros.com", pathname: "/**" },
       { protocol: "https", hostname: "bogota.gov.co", pathname: "/**" },
       { protocol: "https", hostname: "static01.nyt.com", pathname: "/**" },
+      { protocol: "https", hostname: "images.cdn3.buscalibre.com", pathname: "/**" },
+      { protocol: "https", hostname: "intelecto.com.co", pathname: "/**" },
+      { protocol: "https", hostname: "images-na.ssl-images-amazon.com", pathname: "/**" },
+      { protocol: "https", hostname: "www.tornamesa.co", pathname: "/**" },
+      { protocol: "https", hostname: "images.cdn1.buscalibre.com", pathname: "/**" },
     ],
   },
 };

@@ -30,6 +30,7 @@ export default function RootLayout({
     { name: "Inicio", path: "/" },
     { name: "Autores", path: "/authors" },
     { name: "Crear Autor", path: "/crear" },
+    { name: "Libros", path: "/books"}
   ];
 
   return (

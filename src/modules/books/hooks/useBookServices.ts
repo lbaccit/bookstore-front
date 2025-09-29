@@ -1,10 +1,8 @@
 "use client";
-import { useState, useEffect, use } from "react";
-import { getBooks} from "@/modules/books/services/bookService";
+import { useState, useEffect } from "react";
+import { Book } from "@/modules/books/ui/BookCard";
+import { getBooks, deleteBook } from "@/modules/books/services/BookService";
 import { useNotificationStore } from "@/shared/store/useNotificationStore";
-import { set } from "zod";
-import Card, {Book} from "@/modules/books/ui/BookCard";
-
 
 export const useBookList = () => {
     const [books, setBooks] = useState<Book[]>([]);
@@ -20,7 +18,7 @@ export const useBookList = () => {
                 setBooks(data);
             }
             catch {
-                setError("No se pudieron cargar los autores.");
+                setError("No se pudieron cargar los libros.");
             } finally {
                 setIsLoading(false);
             }
@@ -29,5 +27,17 @@ export const useBookList = () => {
         loadBooks();
     }, []);
 
-    return { books, isLoading, error};
+    const removeBook = async (id: number) => {
+        const ok = window.confirm("¿Estás seguro de que deseas eliminar este libro?");
+        if (!ok) return;
+        try {
+            await deleteBook(id);
+            setBooks((prev) => prev.filter((book) => book.id !== id));
+            showNotification("Libro eliminado correctamente", "success");
+        } catch {
+            showNotification("No se pudo eliminar el libro", "error");
+        }
+    };
+
+    return { books, isLoading, error, removeBook };
 };
