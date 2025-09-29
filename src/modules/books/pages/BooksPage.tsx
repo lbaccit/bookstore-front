@@ -1,7 +1,7 @@
 "use client";
 
-import BookCard from "@/modules/books/ui/BookCard";
-import { useBookList } from "@/modules/books/hooks/useBookServices";
+import BookCard from "../ui/BookCard";
+import { useBookList } from "../hooks/useBookServices";
 import Link from "next/link";
 
 export default function BooksPage() {

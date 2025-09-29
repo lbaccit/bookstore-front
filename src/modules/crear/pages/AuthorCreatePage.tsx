@@ -7,7 +7,7 @@ import {
     AuthorWithAssociationsSchema 
 } from "../validation/AuthorSchema";
 import { createAuthor, BasicAuthorFormData } from "../services/crearService";
-import { createBookWithAuthor } from "@/modules/books/services/BookService";
+import { createBookWithAuthor } from "../../books/services/BookService";
 import { createPrizeWithAuthor, PrizeFormData } from "@/modules/prizes/services/PrizeService";
 import { useNotificationStore } from "@/shared/store/useNotificationStore";
 

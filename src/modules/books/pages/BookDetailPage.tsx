@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { getBookWithReviews, createReview, type BookWithReviews, type Review } from "@/modules/books/services/BookService";
+import { getBookWithReviews, createReview, type BookWithReviews, type Review } from "../services/BookService";
 import { useNotificationStore } from "@/shared/store/useNotificationStore";
 import Modal from "@/shared/ui/Modal";
 import ReviewForm from "@/modules/books/ui/ReviewForm";

@@ -1,7 +1,7 @@
-import { fetcher } from "@/shared/services/http";
+import { fetcher } from "../../../shared/services/http";
 import type { z } from "zod";
-import type { BookSchema } from "@/modules/books/validation/BookSchema";
-import { DEFAULT_EDITORIAL_ID } from "@/shared/services/config";
+import type { BookSchema } from "../validation/BookSchema";
+import { DEFAULT_EDITORIAL_ID } from "../../../shared/services/config";
 
 // Tipo inferido desde el Zod schema
 export type BookFormData = z.infer<typeof BookSchema>;

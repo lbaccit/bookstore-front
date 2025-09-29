@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import BookForm from "@/modules/books/ui/BookForm";
-import { createBook, associateBookWithAuthor } from "@/modules/books/services/BookService";
+import { createBook, associateBookWithAuthor } from "../services/BookService";
 import type { BookWithAuthorFormData } from "@/modules/books/validation/BookSchema";
 import { useNotificationStore } from "@/shared/store/useNotificationStore";
 

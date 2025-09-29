@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import BookForm from "@/modules/books/ui/BookForm";
 import type { BookWithAuthorFormInputData, BookWithAuthorFormData } from "@/modules/books/validation/BookSchema";
-import { getBookWithReviews, updateBook, associateBookWithAuthor } from "@/modules/books/services/BookService";
+import { getBookWithReviews, updateBook, associateBookWithAuthor } from "../services/BookService";
 import { useNotificationStore } from "@/shared/store/useNotificationStore";
 
 export default function BookEditPage() {
