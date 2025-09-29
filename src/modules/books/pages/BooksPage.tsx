@@ -5,7 +5,7 @@ import { useBookList } from "@/modules/books/hooks/useBookServices";
 import Link from "next/link";
 
 export default function BooksPage() {
-    const { books, isLoading, error, removeBook } = useBookList();
+    const { books, isLoading, error } = useBookList();
 
     if (isLoading) {
         return <div className="text-center p-8">Cargando libros...</div>;
