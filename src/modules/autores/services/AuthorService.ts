@@ -1,6 +1,6 @@
-import {Author} from "@/modules/autores/ui/AuthorCard";
-import {fetcher} from "@/shared/services/http";
-import { BasicAuthorFormData } from "@/modules/crear/services/crearService";
+import {Author} from "../ui/AuthorCard";
+import {fetcher} from "../../../shared/services/http";
+import { BasicAuthorFormData } from "../../crear/services/crearService";
 
 // Extended Author interface with associated books and prizes
 export interface AuthorWithAssociations extends Author {

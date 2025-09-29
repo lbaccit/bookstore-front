@@ -1,4 +1,4 @@
-import { fetcher } from "@/shared/services/http";
+import { fetcher } from "../../../shared/services/http";
 import { Author } from "../../autores/ui/AuthorCard";
 
 // Basic author data for creation (without associations)

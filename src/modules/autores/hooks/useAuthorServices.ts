@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect, use } from "react";
-import Card, {Author } from "@/modules/autores/ui/AuthorCard";
-import { getAuthors , deleteAuthor } from "@/modules/autores/services/AuthorService";
-import { useNotificationStore } from "@/shared/store/useNotificationStore";
+import Card, {Author } from "../ui/AuthorCard";
+import { getAuthors , deleteAuthor } from "../services/AuthorService";
+import { useNotificationStore } from "../../../shared/store/useNotificationStore";
 import { set } from "zod";
 
 

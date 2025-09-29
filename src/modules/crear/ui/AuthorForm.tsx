@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
     AuthorWithAssociationsFormSchema,
     AuthorWithAssociationsFormInputData,
-} from "@/modules/crear/validation/AuthorSchema";
+} from "../validation/AuthorSchema";
 interface AuthorFormProps {
     onSubmit: SubmitHandler<AuthorWithAssociationsFormInputData>;
     defaultValues?: Partial<AuthorWithAssociationsFormInputData>;

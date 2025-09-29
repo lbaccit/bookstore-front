@@ -1,4 +1,4 @@
-import { fetcher } from "@/shared/services/http";
+import { fetcher } from "../../../shared/services/http";
 
 export interface Prize {
   id: number;

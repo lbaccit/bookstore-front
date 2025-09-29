@@ -8,8 +8,8 @@ import {
 } from "../validation/AuthorSchema";
 import { createAuthor, BasicAuthorFormData } from "../services/crearService";
 import { createBookWithAuthor } from "../../books/services/BookService";
-import { createPrizeWithAuthor, PrizeFormData } from "@/modules/prizes/services/PrizeService";
-import { useNotificationStore } from "@/shared/store/useNotificationStore";
+import { createPrizeWithAuthor, PrizeFormData } from "../../prizes/services/PrizeService";
+import { useNotificationStore } from "../../../shared/store/useNotificationStore";
 
 
 export default function AuthorCreatePage() {
