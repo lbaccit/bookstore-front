@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Book, getBooks } from "@/modules/books/services/BookService";
+import { Book, getBooks } from "../services/BookService";
 
 export const useBookList = () => {
     const [books, setBooks] = useState<Book[]>([]);
